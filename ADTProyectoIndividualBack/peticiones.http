@@ -1,0 +1,24 @@
+######## Buscartodos
+GET http://localhost:8080/webapi/ordenador
+
+
+
+######## Insetar
+POST http://localhost:8080/webapi/ordenador
+content-type: application/json
+
+{
+"numserie": "05",
+"marca": "prueba1",
+"modelo": "prueba1",
+"precio": 1999.99
+}
+
+######### Borrar
+
+DELETE http://localhost:8080/webapi/ordenador/04
+
+######### BuscarOrdenados
+
+GET http://localhost:8080/webapi/ordenador/campo/precio/direccion/DESC
+
