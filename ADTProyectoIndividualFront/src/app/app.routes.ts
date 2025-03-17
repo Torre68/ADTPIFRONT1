@@ -4,7 +4,7 @@ import { FormularioordenadorComponent } from './formularioordenador/formularioor
 
 export const routes: Routes = [
 
-{path:"listaordenadores", component:ListaordenadoresComponent},
+
 {path:"listaordenadores", component:ListaordenadoresComponent},
 {path:"formularioordenador", component:FormularioordenadorComponent},
 {path: "", component:ListaordenadoresComponent}

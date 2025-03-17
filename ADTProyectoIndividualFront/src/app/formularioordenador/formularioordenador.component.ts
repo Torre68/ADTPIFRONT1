@@ -18,7 +18,15 @@ export class FormularioordenadorComponent {
   
   }
   public insertar() {
+    if (this.ordenador.numserie < 0)  {
+      Swal.fire("El campo 'Número de Serie' debe ser mayor o igual a cero.");
+      return; }
+  if (this.ordenador.precio < 0) {
+    Swal.fire("El campo 'Precio' debe ser mayor o igual a cero");
+    return;}
+
     this.ordenadorRestService.insertar(this.ordenador).subscribe(
+      
       (datos) => {
         Swal.fire({
           title: 'Éxito',
